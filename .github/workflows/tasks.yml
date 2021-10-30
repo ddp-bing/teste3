@@ -235,14 +235,14 @@ jobs:
       - name: Desafio Final
         uses: peter-evans/create-issue-from-file@v3
         with:
-          title: Exercicio 2
+          title: Desafio Final
           content-filepath: .github/content/issues/09-challenge.md
 
       - name: Render template
         id: template
         uses: chuhlomin/render-template@v1.2
         with:
-          template: .github/content/closeIssues/01-closed.md
+          template: .github/content/closeIssues/08-closed.md
           vars: |
             repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
 
